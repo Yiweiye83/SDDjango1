@@ -18,7 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from GISFirstDjango.views import splash
 
-urlpatterns = [
+urlpatterns = []
     path('admin/', admin.site.urls),
-    path('', splash)
-]
+    path('', splash),
+    path('/test', testview),
+    path('/test/<int:number>', numbertest)
+
+
